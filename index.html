@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <title>Vd international</title>
+  </head>
+  <body>
+      <div class="navbar-container">
+    <div class="container-fluid justify-content-md-center contact-navbar" >
+      <div class="row space " >
+        <div class="col">
+          <div class="nav-contact-div">
+            <i class="fa fa-envelope" style="margin: 0px 6px;"></i>
+            <span style="margin: 0px 8px;">info@companyname.com</span>
+            <i class="fa fa-phone" style="margin: 0px 6px;"></i>
+            <span style="margin: 0px 4px;">+919988998899</span>
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="nav-social-media-div">
+            <i class="fa fa-facebook nav-social-media-icons"></i>
+            <i class="fa fa-twitter nav-social-media-icons"></i>
+            <i class="fa fa-linkedin nav-social-media-icons"></i>
+            <i class="fa fa-behance nav-social-media-icons"></i>
+        </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- main nav -->
+      <div class="main-nav-container" >
+          <div class="logo-div" >
+              <img src="./images//appIcon.png" alt="BrancIcon" id="brand-icon"/>
+              
+          </div>
+          <div class="nav-links-div">
+              <a href="#home">HOME</a>
+              <a href="#services">SERVICE</a>
+              <a href="#about">ABOUT US</a>
+              <a href="#feature">FEATURE</a>
+              <a href="#testimonial">TESTIMONIAL</a>
+              <a  href="#contact">CONTACT</a>
+              <a href="#track">TRACK COUNTER</a>
+              <a href="#map">MAP</a>
+              
+          </div>
+      </div>
+    </div >
+      <!-- carousel -->
+      <section id="home">
+      <div id="carouselExampleControls " class="carousel slide " data-ride="carousel" >
+        <div class="carousel-inner carousel-main-div">
+          <div class="carousel-item active">
+              
+            <img class="d-block w-100 carousel-image" src="./images/nature-1.jpg" alt="First slide">
+            <div class="top-left"><h1>hiii</h1></div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 carousel-image" src="./images/nature-2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 carousel-image" src="./images/nature-3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a> -->
+      </div>
+    </section>
+      <section id="services" style="width: 100%;height:80vh;background-color: white;">
+      <h3 style="text-align: center;">Our Products</h3>
+
+      <div class="service-card-container">
+          <div class="toggle-service">
+              <span id="p1" onclick="toggleProducts(`product1`)" class="active-toggle-link">Product 1</span>
+              <span id ="p2" onclick="toggleProducts(`product2`)" class="toggle-link">Product 2</span>
+              <span id = "p3" onclick="toggleProducts(`product3`)" class="toggle-link">Product 3</span>
+          </div>
+          <div id="product-card-container">
+            <div id="product-card">
+              
+                <img src="./images/nature-1.jpg" id='product-image' class="product-img"/>
+                <div class="product-card-details">
+                  <p class="card-text" id="product-desc">Product 1</p>
+                  <button type="button" class="download-button" >Download</button>
+                </div>
+                
+              </div>
+          </div>
+          
+      </div>
+        
+      </section>
+      <section id="about" style="background:#F9F9FF">
+        <h3 style="text-align: center;padding: 20px;">Why Choose Us?</h3>
+        <div class="choose-us-container">
+          <div class="choose-us-card">
+            <p style="color:grey;font-weight:600">01</p>
+            <p class="reason-text">Reason one</p>
+            <p class="reason-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+          </div>
+          <div class="choose-us-card">
+            <p style="color:grey;font-weight:600">02</p>
+            <p class="reason-text">Reason two</p>
+            <p class="reason-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+          </div><div class="choose-us-card">
+            <p style="color:grey;font-weight:600">03</p>
+            <p class="reason-text">Reason three</p>
+            <p class="reason-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+          </div>
+        </div>
+      </section>
+      <section id='testimonial'>
+        <h3 style="text-align: center;padding: 20px;">What our Customers say</h3>
+        
+        <div class="testimonial-container">
+            <div class="testimonial-card-container">
+            <div class="testimonial-card">
+              <i class='fa fa-user' style='font-size:58px;'></i>
+              <p class="testimonial-text">Extremely Satisfied by their service as they really do keep customer satisfaction as their top priority</p>
+              <div class="testimonial-card-designation">
+                <p class="t-name">John Doe</p>
+                <p class="t-designation">Senior manager Company Co.</p>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <i class='fa fa-user' style='font-size:58px;'></i>
+              <p class="testimonial-text">Extremely Satisfied by their service as they really do keep customer satisfaction as their top priority</p>
+              <div class="testimonial-card-designation">
+                <p class="t-name">John Doe</p>
+                <p class="t-designation">Senior manager Company Co.</p>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <i class='fa fa-user' style='font-size:58px;'></i>
+              <p class="testimonial-text">Extremely Satisfied by their service as they really do keep customer satisfaction as their top priority</p>
+              <div class="testimonial-card-designation">
+                <p class="t-name">John Doe</p>
+                <p class="t-designation">Senior manager Company Co.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+       
+      
+      </section>
+      
+    <!--The div element for the map -->
+    <section id="contact-us">
+      <h3 style="text-align: center;padding: 20px;">If you need, Just drop us a line</h3>
+      <div class="row" style="margin: 34px 0px;">
+        <div class="col-lg-3 col-md-6 single-contact-info">
+          <h6>VISIT OUR OFFICE</h6>
+          <p>65,kazi Sayed Street 22, Vitthal chambers, Masjid Bunder(w).</p>
+        </div>
+        <div class="col-lg-3 col-md-6 single-contact-info">
+          <h6>CALL US</h6>
+          <p>022-49735277</p>
+        </div>
+        <div class="col-lg-3 col-md-6 single-contact-info">
+          <h6>EMAIL US</h6>
+          <p>info@vdInternationals.com
+            sales@vdInternationals.com
+            
+            </p>
+        </div>
+        <div class="col-lg-3 col-md-6 single-contact-info">
+          <h6>CUSTOMER SUPPORT</h6>
+          <p>support@vdInternationals.com</p>
+        </div>
+      </div>
+      <div id="googleMap"></div>
+    </section>
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4  col-md-6 col-sm-6">
+              <div class="single-footer-item">
+                <p style="text-align: left;">Copyright © 2018 All rights reserved VD International</p>
+              </div>
+            </div>
+            <div class="col-lg-4  col-md-6 col-sm-6">
+              <div class="single-footer-item">
+                
+              </div>
+            </div>
+            <div class="col-lg-4  col-md-6 col-sm-6">
+              <div class="single-footer-item">
+                <p >Follow Us</p>
+                <div class="col">
+                  <div style="display:flex;justify-content:center">
+                    <i class="fa fa-facebook nav-social-media-icons" style="color: white;text-align: center;"></i>
+                    <i class="fa fa-twitter nav-social-media-icons" style="color: white;text-align: center;"></i>
+                    <i class="fa fa-linkedin nav-social-media-icons" style="color: white;text-align: center;"></i>
+                    <i class="fa fa-behance nav-social-media-icons" style="color: white;text-align: center;"></i>
+                </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+        
+      
+    </div>
+
+
+
+
+    <script>
+      // scroll shadow
+        $(window).scroll(function() {
+    if ($(window).scrollTop() > 10) {
+        $('.main-nav-container').addClass('floatingNav');
+    } else {
+        $('.main-nav-container').removeClass('floatingNav');
+    }
+
+
+});
+
+
+
+
+
+// products switch
+function toggleProducts(value){
+    var productDescription =document.getElementById("product-desc")
+    var productImage = document.getElementById("product-image")
+    
+   
+    if(value === "product1")
+    {
+      var p1 = document.getElementById("p1");
+      if(p1.classList.contains("toggle-link"))
+      {
+        p1.classList.remove("toggle-link");
+      p1.classList.add("active-toggle-link")
+      }
+      else{
+        p1.classList.remove("active-toggle-link");
+      p1.classList.add("toggle-link")
+      }
+        productDescription.innerHTML = "Product 1";
+        productImage.src= './images/nature-1.jpg'
+       
+    }else if( value === "product2"){
+      var p2 = document.getElementById("p2");
+      if(p2.classList.contains("toggle-link"))
+      {
+        p2.classList.remove("toggle-link");
+      p2.classList.add("active-toggle-link")
+      }
+      else{
+        p2.classList.remove("active-toggle-link");
+      p2.classList.add("toggle-link")
+      }
+        productDescription.innerHTML = "Product 2";
+        productImage.src= './images/nature-2.jpg'
+    }
+    else {
+      var p3 = document.getElementById("p3");
+      if(p3.classList.contains("toggle-link"))
+      {
+        p3.classList.remove("toggle-link");
+      p3.classList.add("active-toggle-link")
+      }
+      else{
+        p3.classList.remove("active-toggle-link");
+      p3.classList.add("toggle-link")
+      }
+        productDescription.innerHTML = "Product 3";
+        productImage.src= './images/nature-3.jpg'
+    }
+}
+
+// maps
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 19.075983, lng:72.877655};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('googleMap'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdjmnuznoXXVPRKsGtg-BbuwF_KYrtkQI&callback=initMap">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+html {
+  scroll-behavior: smooth;
+}
+#brand-icon {
+  width: 120px;
+  height: 80px;
+}
+.contact-navbar {
+  width: 100%;
+  background-color: #f9f9ff;
+  /* z-index: 10;
+  position: fixed; */
+}
+
+.nav-contact-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.space {
+  padding: 2px 100px;
+}
+.nav-social-media-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+.nav-social-media-icons {
+  margin: 0px 10px;
+}
+
+.navbar-container {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+}
+.main-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links-div {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+.nav-links-div a {
+  margin: 0px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000;
+}
+.nav-links-div a:hover {
+  text-decoration: none;
+  color: #000;
+}
+.floatingNav {
+  border-radius: 2px;
+  box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+}
+.carousel-main-div {
+  margin-top: 100px;
+}
+.carousel-image {
+  height: 100vh;
+}
+.top-left {
+  position: absolute;
+  top: 78px;
+  left: 16px;
+  color: white;
+}
+
+/* services section */
+#services {
+  margin-top: 60px;
+}
+.service-card-container {
+  width: 80%;
+  margin: 40px;
+}
+.toggle-service {
+  display: flex;
+  justify-content: space-evenly;
+}
+.toggle-service span {
+  cursor: pointer;
+}
+.toggle-link:hover {
+  color: #007bff;
+}
+.active-toggle-link {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 4px;
+}
+#product-card {
+  border-radius: 10px;
+  width: 100%;
+  margin: 30px 10px;
+  display: flex;
+}
+.product-img {
+  height: 300px;
+  width: 70%;
+}
+.product-card-details {
+  margin: 10px 20px;
+  position: relative;
+  /* border: 1px solid #000; */
+  width: 100%;
+}
+#product-desc {
+  height: 80%;
+}
+.download-button {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.375rem 0.75rem;
+  border: none;
+  right: 0;
+  position: absolute;
+}
+
+/* why choose us */
+.choose-us-container {
+  width: 80%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-column-gap: 20px;
+  /* border: 1px solid #000; */
+  padding: 20px;
+}
+.choose-us-card {
+  background: #fff;
+  border-radius: 6px;
+  /* height: 200px; */
+  text-align: left;
+  padding: 16px;
+}
+.reason-text {
+  font-weight: 600;
+  font-size: 16px;
+}
+.reason-desc {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/* testimonial */
+.testimonial-container {
+  background-image: url('./images//nature-1.jpg');
+
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin: 40px 0px;
+}
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.testimonial-card-container {
+  width: 100%;
+  margin: 0px auto;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-evenly;
+}
+.testimonial-card {
+  padding: 30px;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  width: 360px;
+  height: 400px;
+  position: relative;
+}
+.testimonial-text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.testimonial-card-designation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 30px;
+}
+
+.testimonial-card-designation .t-name {
+  font-weight: 600;
+  color: palevioletred;
+  font-size: 22px;
+  margin: 4px 10px;
+}
+.testimonial-card-designation .t-designation {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 4px 10px;
+}
+
+/* contact section */
+#contact-us {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.single-contact-info {
+  text-align: center;
+}
+.single-contact-info p {
+  margin: 16px 0px;
+}
+/* map */
+#googleMap {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+/* footer */
+#footer {
+  margin-top: 100px;
+  background: #222;
+}
+.footer-container {
+  padding: 120px 50px;
+  /* color: #fff; */
+}
+.single-footer-item p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+.newsLetter-input {
+  padding: 14px 20px;
+  width: 100%;
+  background: #fff;
+  border: none;
+  outline: none;
+}
