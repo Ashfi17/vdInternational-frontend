@@ -72,13 +72,14 @@ html {
   margin-top: 100px;
 }
 .carousel-image {
-  height: 100vh;
+  height: 90vh;
 }
 .top-left {
   position: absolute;
-  top: 78px;
-  left: 16px;
-  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
 }
 
 /* services section */
@@ -97,10 +98,10 @@ html {
   cursor: pointer;
 }
 .toggle-link:hover {
-  color: #007bff;
+  color: #34cb85;
 }
 .active-toggle-link {
-  border-bottom: 2px solid #007bff;
+  border-bottom: 2px solid #34cb85;
   padding-bottom: 4px;
 }
 #product-card {
@@ -124,8 +125,8 @@ html {
 }
 .download-button {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #34cb85;
+  border-color: #34cb85;
   border-radius: 4px;
   text-align: center;
   vertical-align: middle;
@@ -134,7 +135,27 @@ html {
   right: 0;
   position: absolute;
 }
-
+/* ABOUT US */
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 20%;
+}
+.about-us-description-card {
+  padding: 30px;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  width: 400px;
+  height: 340px;
+  /* border: 1px solid #222; */
+  box-shadow: 1px 1px 5px 1px #c4c4c4;
+}
+.logo-medium-about-us {
+  height: 140px;
+  width: 220px;
+}
 /* why choose us */
 .choose-us-container {
   width: 80%;
@@ -236,6 +257,46 @@ html {
 #googleMap {
   height: 400px; /* The height is 400 pixels */
   width: 100%; /* The width is the width of the web page */
+}
+.contact-us-form {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.form-input-container {
+  width: 46%;
+}
+.form-input-container input {
+  outline: none;
+  border: 1px solid #c4c4c4;
+  padding: 12px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.form-input-container textarea {
+  outline: none;
+  border: 1px solid #c4c4c4;
+  /* padding: 12px; */
+  width: 100%;
+  height: 190px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.form-input-container button {
+  border-radius: 20px;
+  padding: 0px 30px;
+  background-image: -webkit-linear-gradient(45deg, #f9ab72 0%, #f52d70 100%);
+  outline: none;
+  border: none;
+  line-height: 40px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 /* footer */
