@@ -66,13 +66,11 @@
           </div>
           <div class="nav-links-div">
               <a href="#home">HOME</a>
-              <a href="#services">SERVICE</a>
+              <a href="#products">PRODUCTS</a>
               <a href="#about">ABOUT US</a>
-              <a href="#feature">FEATURE</a>
-              <a href="#testimonial">TESTIMONIAL</a>
-              <a  href="#contact">CONTACT</a>
-              <a href="#track">TRACK COUNTER</a>
-              <a href="#map">MAP</a>
+              <a href="#whyUs">WHY US ?</a>
+              <a  href="#contact-us">CONTACT US</a>
+             
               
           </div>
       </div>
@@ -83,14 +81,16 @@
         <div class="carousel-inner carousel-main-div">
           <div class="carousel-item active">
               
-            <img class="d-block w-100 carousel-image" src="./images/nature-1.jpg" alt="First slide">
-            <div class="top-left"><h1>hiii</h1></div>
+            <img class="d-block w-100 carousel-image" src="./images/rice-image.jpg" alt="First slide">
+            <div class="top-left"><h1>HAND PICKED,<br/> HIGH QUALITY RICE FROM INDIA</h1></div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100 carousel-image" src="./images/nature-2.jpg" alt="Second slide">
+            <img class="d-block w-100 carousel-image" src="./images/grains.jpg" alt="Second slide">
+            <div class="top-left"><h1>SOME PULSES AND INDIAN DALS TO GO WITH RICE</h1></div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100 carousel-image" src="./images/nature-3.jpg" alt="Third slide">
+            <img class="d-block w-100 carousel-image" src="./images/box-car-red-1366x660.jpg" alt="Third slide">
+            <div class="top-left"><h1>BEST IN THE CLASS DELIVERY</h1></div>
           </div>
         </div>
         <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -103,12 +103,12 @@
         </a> -->
       </div>
     </section>
-      <section id="services" style="width: 100%;height:80vh;background-color: white;">
+      <section id="products" style="width: 100%;height:80vh;background-color: white;margin-top: 80px;">
       <h3 style="text-align: center;">Our Products</h3>
 
       <div class="service-card-container">
           <div class="toggle-service">
-              <span id="p1" onclick="toggleProducts(`product1`)" class="active-toggle-link">Product 1</span>
+              <span id="p1" onclick="toggleProducts(`product1`)" >Product 1</span>
               <span id ="p2" onclick="toggleProducts(`product2`)" class="toggle-link">Product 2</span>
               <span id = "p3" onclick="toggleProducts(`product3`)" class="toggle-link">Product 3</span>
           </div>
@@ -127,7 +127,16 @@
       </div>
         
       </section>
-      <section id="about" style="background:#F9F9FF">
+      <section id="about" style="background:#fff;margin: 30px 0px;">
+        <h3 style="text-align: center;padding: 20px;">About Us?</h3>
+        <div class="about-us-container">
+          <div class="about-us-description-card">ABOUT US DESCRIPTION</div>
+          <div >
+            <img alt="Logo-medium"  src="./images//appIcon.png" class="logo-medium-about-us"/>
+          </div>
+        </div>
+      </section>
+      <section id="whyUs" style="background:#F9F9FF">
         <h3 style="text-align: center;padding: 20px;">Why Choose Us?</h3>
         <div class="choose-us-container">
           <div class="choose-us-card">
@@ -146,7 +155,7 @@
           </div>
         </div>
       </section>
-      <section id='testimonial'>
+      <!-- <section id='testimonial'>
         <h3 style="text-align: center;padding: 20px;">What our Customers say</h3>
         
         <div class="testimonial-container">
@@ -180,7 +189,7 @@
         </div>
        
       
-      </section>
+      </section> -->
       
     <!--The div element for the map -->
     <section id="contact-us">
@@ -207,6 +216,23 @@
         </div>
       </div>
       <div id="googleMap"></div>
+      <form class="contact-us-form">
+        <div class="form-input-container">
+        <input placeholder="enter your name"/>
+        <input placeholder="enter your address"/>
+        <input placeholder="enter your subject"/>
+      </div>
+        <div class="form-input-container">
+          <textarea id="message-text-area" name="messageTextArea" placeholder="message">
+            
+            </textarea>
+            <button type="submit">Submit</button>
+      </div>
+      
+      
+        
+        
+      </form>
     </section>
     <footer id="footer">
       <div class="footer-container">
@@ -270,44 +296,44 @@ function toggleProducts(value){
    
     if(value === "product1")
     {
-      var p1 = document.getElementById("p1");
-      if(p1.classList.contains("toggle-link"))
-      {
-        p1.classList.remove("toggle-link");
-      p1.classList.add("active-toggle-link")
-      }
-      else{
-        p1.classList.remove("active-toggle-link");
-      p1.classList.add("toggle-link")
-      }
+      // var p1 = document.getElementById("p1");
+      // if(p1.classList.contains("toggle-link"))
+      // {
+      //   p1.classList.remove("toggle-link");
+      // p1.classList.add("active-toggle-link")
+      // }
+      // else{
+      //   p1.classList.remove("active-toggle-link");
+      // p1.classList.add("toggle-link")
+      // }
         productDescription.innerHTML = "Product 1";
         productImage.src= './images/nature-1.jpg'
        
     }else if( value === "product2"){
-      var p2 = document.getElementById("p2");
-      if(p2.classList.contains("toggle-link"))
-      {
-        p2.classList.remove("toggle-link");
-      p2.classList.add("active-toggle-link")
-      }
-      else{
-        p2.classList.remove("active-toggle-link");
-      p2.classList.add("toggle-link")
-      }
+      // var p2 = document.getElementById("p2");
+      // if(p2.classList.contains("toggle-link"))
+      // {
+      //   p2.classList.remove("toggle-link");
+      // p2.classList.add("active-toggle-link")
+      // }
+      // else{
+      //   p2.classList.remove("active-toggle-link");
+      // p2.classList.add("toggle-link")
+      // }
         productDescription.innerHTML = "Product 2";
         productImage.src= './images/nature-2.jpg'
     }
     else {
-      var p3 = document.getElementById("p3");
-      if(p3.classList.contains("toggle-link"))
-      {
-        p3.classList.remove("toggle-link");
-      p3.classList.add("active-toggle-link")
-      }
-      else{
-        p3.classList.remove("active-toggle-link");
-      p3.classList.add("toggle-link")
-      }
+      // var p3 = document.getElementById("p3");
+      // if(p3.classList.contains("toggle-link"))
+      // {
+      //   p3.classList.remove("toggle-link");
+      // p3.classList.add("active-toggle-link")
+      // }
+      // else{
+      //   p3.classList.remove("active-toggle-link");
+      // p3.classList.add("toggle-link")
+      // }
         productDescription.innerHTML = "Product 3";
         productImage.src= './images/nature-3.jpg'
     }
